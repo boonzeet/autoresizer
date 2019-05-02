@@ -10,7 +10,7 @@ RPG Maker XP is restricted to 32x32 tilesets, which for many games are too large
 
 ## How to use
 
-Simply install the tool with npm (![details on how to install node and npm](https://blog.teamtreehouse.com/install-node-js-npm-windows)):
+Simply install the tool with npm ([details on how to install node and npm](https://blog.teamtreehouse.com/install-node-js-npm-windows)):
 ```
 npm install rmxp16to32@latest -g
 ```

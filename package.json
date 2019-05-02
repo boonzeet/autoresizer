@@ -1,0 +1,21 @@
+{
+  "name": "rmxp16to32",
+  "version": "1.0.0",
+  "description": "A tool to watch for image changes within a folder and double the size of PNG files for importing into RPG Maker XP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rmxp16to32": "./bin/demo-global.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.6.4",
+    "log-timestamp": "^0.3.0",
+    "node-watch": "^0.6.2"
+  },
+  "preferGlobal": true
+}

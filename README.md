@@ -2,7 +2,7 @@
 
 A simple Node command-line tool to watch a folder for PNG file changes and create a 2x resolution version. 
 
-![Normal resoution](http://boonzeet.github.com/rmxp16to32/example/example.png) ![After process](http://boonzeet.github.com/rmxp16to32/example/example_x.png)
+![Normal resoution](https://raw.githubusercontent.com/boonzeet/rmxp16to32/master/example/example.png) ![After process](https://raw.githubusercontent.com/boonzeet/rmxp16to32/master/example/example_x.png)
 
 ## Why is this useful?
 

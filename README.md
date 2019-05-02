@@ -2,6 +2,8 @@
 
 A simple Node command-line tool to watch a folder for PNG file changes and create a 2x resolution version. 
 
+![Normal resoution](http://boonzeet.github.com/rmxp16to32/example/example.png) ![After process](http://boonzeet.github.com/rmxp16to32/example/example_x.png)
+
 ## Why is this useful?
 
 RPG Maker XP is restricted to 32x32 tilesets, which for many games are too large. Using this tool, it is easy to work with 16x16 tilesets and automatically create import versions for use within RPG Maker XP.

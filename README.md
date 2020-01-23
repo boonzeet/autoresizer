@@ -24,14 +24,32 @@ The tool can then be used from the command line by navigating into the directory
 ```
 C:\Game Art> rmxp16to32
 ```
-This will start the watcher on this folder and all folders within it. Files will be saved to the same folder as the origin folder. The program can be quit by closing the command window or using Ctrl+C.
+This will start the watcher on this folder and all folders within it. Files will be saved to the same folder as the folder of the original file. The program can be quit by closing the command window or using Ctrl+C.
 
-The default extension appended to files is `_x`, but you can customise it like so:
+The default: `add` the suffix `_x` on save, at a scale factor of `2.0` with the `nearest` interpolation, but you can customise it like so:
+
 ```
-rmxp16to32 @2x
+rmxp16to32 --suffix @2x
 ```
 
 This will now save files as `example@2x.png`.
+
+```
+rmxp16to32 --mode sub --suffix _wip
+```
+
+This will look for files with the extension `_wip` and scale them up, saving them without the extension.
+
+## Command line flags
+
+RMXP16to32 now supports command line flags, allowing fully custom settings. These are detailed below:
+
+```
+--mode [mode]: Save mode. Can be 'add' or 'sub', 'add' appends suffix on save, 'sub' watches for files with suffix and removes it. Default 'add'.
+--suffix [suffix] : Suffix, the string that will either be added or removed on save. Default '_x'.
+--scale [suffix] : Scale factor to resize the image by. Must be a floating point number. Default '2.0'.
+--intp [interpolation] : Interpolation style. Can be either: ${Object.keys(INTERPOLATIONS).join(", ")}. Default 'nearest'
+```
 
 ## Advanced features
 
@@ -41,10 +59,10 @@ Supported interpolation arguments: nearest, bilinear, bicubic, hermite, bezier
 
 Examples:
 ```
-rmxp16to32 @3x 3.0 bicubic
-rmxp16to32 _halfsize 0.5 bilinear
+rmxp16to32 --suffix @3x --scale 3.0 --intp bicubic
+rmxp16to32 --mode sub -suffix _og --scale 0.5 --intp bilinear
 etc.
 ```
 
 The first will create files with the extension @3x, scaled to 3 times their size using a smoother bicubic function.
-The second will create files with the extension _halfsize, scaled to half their size using a smoother bilinear function.
+The second will look for files with the extension _og, and scale to half their size using a smoother bilinear function, saving them without the extension.

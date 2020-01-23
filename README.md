@@ -48,7 +48,7 @@ RMXP16to32 now supports command line flags, allowing fully custom settings. Thes
 --mode [mode]: Save mode. Can be 'add' or 'sub', 'add' appends suffix on save, 'sub' watches for files with suffix and removes it. Default 'add'.
 --suffix [suffix] : Suffix, the string that will either be added or removed on save. Default '_x'.
 --scale [suffix] : Scale factor to resize the image by. Must be a floating point number. Default '2.0'.
---intp [interpolation] : Interpolation style. Can be either: ${Object.keys(INTERPOLATIONS).join(", ")}. Default 'nearest'
+--intp [interpolation] : Interpolation style. Can be either: 'nearest', 'bilinear', 'bezier', 'bicubic', 'hermite'. Default 'nearest'
 ```
 
 ## Advanced features

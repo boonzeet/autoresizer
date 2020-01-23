@@ -1,4 +1,4 @@
-﻿# rmxp16to32
+﻿# rmxp16to32 v1.1
 
 A simple Node command-line tool to watch a folder and its subfolders for PNG file changes and create a 2x resolution version. 
 

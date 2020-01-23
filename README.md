@@ -40,6 +40,11 @@ rmxp16to32 --mode sub --suffix _wip
 
 This will look for files with the extension `_wip` and scale them up, saving them without the extension.
 
+For more help, use:
+```
+rmxp16to32 --help
+```
+
 ## Command line flags
 
 RMXP16to32 now supports command line flags, allowing fully custom settings. These are detailed below:
